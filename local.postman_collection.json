@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "f978ce1f-2e9f-4946-a4fb-d0e4706d7c00",
+		"name": "local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "test lastname",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test username",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test password",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "test12",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "test lastname123",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test username123",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test password123",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/users/e1f77f56-6d68-43da-9942-900b02fcefbb",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"e1f77f56-6d68-43da-9942-900b02fcefbb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/e1f77f56-6d68-43da-9942-900b02fcefbb",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"e1f77f56-6d68-43da-9942-900b02fcefbb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/users/8e71bb13-75bc-42d0-9224-82238b958a4c",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"8e71bb13-75bc-42d0-9224-82238b958a4c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
